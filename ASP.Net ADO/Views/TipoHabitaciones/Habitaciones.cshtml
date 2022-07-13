@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "Habitaciones";
+}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <head>
+        <script src="js+/modernizr.custom.js"></script>
+    </head>
+    <body class="">
+
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul class="social">
+                    <li><span>V 1.0 |</span> Sliding Menu</li>
+                </ul>
+            </div>
+            <header class="clearfix">
+                <span>Test Lab</span>
+                <h1>Useless testing</h1>
+                <nav>
+                    <a href="#" class="icon-arrow-left" data-info="Previous">Previous</a>
+                    <a href="#" class="icon-drop" data-info="See All">See All</a>
+                </nav>
+            </header> <!--End Header -->
+            <ul class="tl-menu">
+                <li><a href="#" class="icon-logo">Logo</a></li>
+                <li><a href="#" class="icon-tag" id="navItem1">Option 1</a></li>
+                <li><a href="#" class="icon-chart" id="navItem2">Option 2</a></li>
+                <li><a href="#" class="entypo-camera" id="navItem3">Option 3</a></li>
+                <li class="tl-current">
+                    <a href="#" class="icon-download" id="navItem4">Active</a>
+                </li>
+                <li><a href="#" class="icon-flag" id="navItem5">Option 4</a></li>
+                <li><a href="#" class="icon-lamp" id="navItem6">Option 5</a></li>
+                <li><a href="#" class="icon-file" id="navItem7">Option 6</a></li>
+            </ul>
+            <div class="main">
+                <h2>Headline</h2>
+
+                <div class="tabs">
+                    <input type="radio" name="tabs" id="styles" checked />
+                    <input type="radio" name="tabs" id="typography" />
+                    <label for="styles">Styles</label>
+                    <label for="typography"><span class="entypo-camera">      </span>Typography</label>
+                </div>  <!--End Tabs -->
+
+                <h3>Lorem ipsum dolor sit amet, feugait invidunt vix no. Eu has veri habeo inermis. Vel an ignota aperiri scriptorem.</h3>
+                <p>Sanctus efficiantur has ei, tantas expetendis philosophia cu nec, dignissim voluptatibus no mei. Ne mei probatus conceptam, nec cu ullum placerat adolescens. Sit at melius minimum pertinax, ipsum menandri vel et.Ne vis error maiorum, saepe adolescens definitiones id mea. Ignota semper ne eos, et duo pertinax imperdiet. Vix soluta utamur fabellas ne, eos moderatius accommodare et. In eros justo qui, an eam dicam praesent dissentiunt. Ex vel fastidii moderatius, recusabo gloriatur rationibus ea usu, pro cu possim consequat.</p>
+
+                <p>Ex utamur aliquip mea, vel sumo legendos ea, illud legimus ad eam. Nec cibo assum postea ut, mei ex esse persecuti dissentias, in munere conceptam quo. Vis in essent cetero sanctus, diam rebum constituam nam id. Probo impetus ei vix, no nihil dignissim pro. Pro illum posse habemus te, has ei bonorum detraxit mediocrem, modo volumus in pro. Persius adversarium ut usu. Reque nihil albucius in cum, elitr efficiendi dissentiet te pri. Cibo homero vim et. Pro in eirmod pertinax, usu eu graeco discere appellantur. Suas vidit autem eam ut, ea mel sale forensibus. Dicta vulputate voluptaria te duo. Porro facete id est.Amet hendrerit te vis. His in harum ignota essent, dolore suavitate ius ex. Sea iriure incorrupte ea, pro legere fastidii no, sit meis ceteros albucius eu. Et vis omnis idque regione.</p>
+
+
+                <div class="btn_container">
+                    <a href="#" class="btn blue">Button</a>
+                </div> <!--End Btn Containter -->
+
+                <div class="btn_container">
+                    <a href="#" class="btn outline">Button</a>
+                </div> <!--End Btn Containter -->
+
+                <div class="btn_container">
+                    <a href="#" class="btn blue2">Button</a>
+                </div> <!--End Btn Containter -->
+
+            </div> <!--End Main -->
+            <!--Slider Nav 1-->
+
+            <nav class="slider-menu slider-menu-vertical slider-menu-left" id="slider-menu-s1">
+                <h3>MENU</h3>
+                <a href="#"><span class="icon-flag"></span>Item 1</a>
+                <a href="#"><span class="icon-flag"></span>Item 2</a>
+                <a href="#"><span class="icon-flag"></span>Item 3</a>
+                <a href="#"><span class="icon-flag"></span>Item 4</a>
+                <a href="#"><span class="icon-flag"></span>Item 5</a>
+                <a href="#"><span class="icon-flag"></span>Item 6</a>
+                <a href="#"><span class="icon-flag"></span>Item 7</a>
+            </nav>
+
+        </div> <!--End Containter -->
+        <!-- Classie - class helper functions by https://github.com/desandro/classie -->
+        <!-- Add id=navItem# to nav and add a seperate function below to match the id. Each nav item must have a unique id navItem1#. -->
+        <script src="js/classie.js"></script>
+        <script>
+        var menuLeft = document.getElementById('slider-menu-s1'),
+            showLeft = document.getElementById('showLeft'),
+            body = document.body;
+
+        navItem1.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem1');
+        };
+
+        navItem2.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem2');
+        };
+
+        navItem3.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem3');
+        };
+
+        navItem4.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem4');
+        };
+
+        navItem5.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem5');
+        };
+
+        navItem6.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem6');
+        };
+
+        navItem7.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(menuLeft, 'slider-menu-open');
+            disableOther('navItem7');
+        };
+
+        function disableOther(button) {
+            if (button !== 'showLeft') {
+                classie.toggle(showLeft, 'disabled');
+            }
+        }
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+        </script>
+
+
+
+    </body>
+</html>
